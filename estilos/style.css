@@ -99,6 +99,123 @@ html{
     width: 100vw;
     grid-area: footer;
     background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "up_button up_button"
+                         "footer_navbar social_media"
+                         "copy_right copy_right";
+}
+
+#up_button{
+    grid-area: up_button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#up_button a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid gold;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#up_button a:hover{
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+}
+
+#up_button a:focus{
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+#footer_navbar{
+    grid-area: footer_navbar;
+}
+
+#footer_navbar ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_navbar ul li{
+    margin: 2%;
+    width: 15%;
+}
+
+#footer_navbar ul li a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#footer_navbar ul li a:hover{
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+}
+
+#footer_navbar ul li a:focus{
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+#social_media{
+    grid-area: social_media;
+}
+
+#social_media ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+#social_media ul li{
+    width: 20%;
+}
+
+#social_media ul li a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 2%;
+}
+
+#copy_right{
+    width: 100%;
+    grid-area: copy_right;
+}
+
+#copy_right p{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 2%;
 }
 
 /*Formato Tablet*/
@@ -116,6 +233,18 @@ html{
 
     #header nav ul li a{
         font-size: 1rem;
+    }
+
+    #footer_navbar ul{
+        flex-direction: column;
+    }
+
+    #footer_navbar ul li{
+        width: 25%;
+    }
+
+    #social_media ul{
+        flex-direction: column;
     }
 }
 
@@ -140,5 +269,22 @@ html{
 
     #header nav ul li a{
         font-size: 0.8rem;
+    }
+
+    #footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "up_button"
+                             "footer_navbar"
+                             "social_media"
+                             "copy_right";
+    }
+
+    #footer_navbar ul{
+        flex-direction: column;
+    }
+
+    #footer_navbar ul li{
+        width: 25%;
     }
 }
