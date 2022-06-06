@@ -12,11 +12,10 @@ html{
 }
 
 #body{
-    background-color: orange;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "header"
                          "banner"
                          "main"
@@ -86,7 +85,10 @@ html{
 #banner{
     width: 100vw;
     grid-area: banner;
-    background-color: blue;
+    background-image: url(../imagenes/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vw * (513 / 1343));
 }
 
 #main{
