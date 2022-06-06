@@ -145,6 +145,43 @@ html{
     background-color: yellow;
 }
 
+#informacion{
+    width: 100%;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#informacion h1{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+    color: black;
+}
+
+#conteiner{
+    background-color: red;
+    width: 100%;
+}
+
+.card{
+    background-color: yellow;
+    width: 33%;
+}
+
+.card figure{
+    width: 100%;
+}
+
+.card figure img{
+    width: 100%;
+}
+
 #footer{
     width: 100vw;
     grid-area: footer;
