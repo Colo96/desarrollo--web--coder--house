@@ -112,6 +112,8 @@ html{
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Libre Franklin', sans-serif;
+    width: 100%;
+    text-align: center;
 }
 
 #banner ul li a{
@@ -283,6 +285,14 @@ html{
         font-size: 1rem;
     }
 
+    #banner ul li{
+        font-size: 0.8rem;
+    }
+
+    #banner ul li a{
+        font-size: 0.8rem;
+    }
+
     #footer_navbar ul{
         flex-direction: column;
     }
@@ -317,6 +327,14 @@ html{
 
     #header nav ul li a{
         font-size: 0.8rem;
+    }
+
+    #banner ul li{
+        font-size: 0.6rem;
+    }
+
+    #banner ul li a{
+        font-size: 0.6rem;
     }
 
     #footer{
