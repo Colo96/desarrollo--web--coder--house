@@ -89,6 +89,52 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vw * (513 / 1343));
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#banner ul{
+    background-color: gold;
+    width: 25%;
+    padding: 2.5%;
+    opacity: 50%;
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#banner ul li{
+    margin: 2%;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#banner ul li a{
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+    padding: 2%;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#banner ul li a:hover{
+    background-color: silver;
+    color: black;
+}
+
+#banner ul li a:focus{
+    background-color: gray;
+    color: black;
 }
 
 #main{
