@@ -148,11 +148,11 @@ html{
 
 #informacion{
     width: 100%;
-    background-color: silver;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 5%;
 }
 
 #informacion h1{
@@ -203,6 +203,44 @@ html{
     padding: 2%;
     font-size: 1rem;
     font-family: 'Titillium Web', sans-serif;
+}
+
+#sponsors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#sponsors h1{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+    color: black;
+}
+
+.content-sponsors{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
+    grid-auto-rows: auto;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-bottom: 5%;
+}
+
+.content-sponsors li{
+    text-align: center;
+}
+
+.content-sponsors li img{
+    width: 33%;
 }
 
 #footer{
@@ -353,6 +391,10 @@ html{
         font-size: 0.8rem;
     }
 
+    #informacion{
+        padding-bottom: 15%;
+    }
+
     #footer_navbar ul{
         flex-direction: column;
     }
@@ -395,6 +437,10 @@ html{
 
     #banner ul li a{
         font-size: 0.6rem;
+    }
+
+    #informacion{
+        padding-bottom: 80%;
     }
 
     #footer{
